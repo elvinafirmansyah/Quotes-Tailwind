@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+span{
+  text-transform: uppercase;
+  color: #F4DF95;
+  margin-top: 5rem;
+  font-style: normal;
+}
+@media max-width(600px) {
+  .card-quote{
+    padding: 2rem 0;
+  }
+}

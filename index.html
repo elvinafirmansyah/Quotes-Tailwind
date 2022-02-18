@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Learn Tailwind</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300;1,400;1,500;1,600&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'creator': '#F4DF95',
+            'pastel-blue': '#729ED5',
+            'aquabtn': '#C8FFEB',
+          },
+
+          fontSize: {      
+            'xs': '.75rem',      
+            'sm': '.875rem',      
+            'tiny': '.875rem',      
+            'base': '1rem',      
+            'lg': '1.125rem',      
+            'xl': '1.25rem',      
+            '2xl': '1.6rem',      
+            '3xl': '1.875rem',      
+            '4xl': '2.25rem',      
+            '5xl': '3rem',      
+            '6xl': '4rem',     
+            '7xl': '5rem',    
+          }
+        }
+      }
+    }
+  </script>
+</head>
+  <body style="background-image: url(img/background.png);" class="bg-cover bg-center h-screen flex justify-center items-center">
+    <div class="container-md">
+      <div class="card-quote my-5 bg-black/60 lg:px-8 lg:py-9 rounded-lg max-w-screen-md text-center mx-4 max-h-md">
+        <i class="fa-solid fa-quote-right text-6xl text-center text-pastel-blue my-4"></i>
+        <div class="text-quote px-2">
+          <p id="quotes" class="text-white lg:text-3xl pb-2 md:text-2xl italic">Success is not final, failure is not fatal: It is the courage to continue that counts. <br><br><span class="text-creator uppercase not-italic">- Winston S. Churchill</span></p>
+        </div>
+        <button id="btn" class="bg-aquabtn px-10 py-3 text-base rounded-full mt-4 mb-6">Next<i class="fa-solid fa-angle-right pl-6"></i></button>
+      </div>
+    </div>
+  </body>
+
+  <script src="quotes.js"></script>
+  <script src="https://kit.fontawesome.com/1c1fe6136b.js" crossorigin="anonymous"></script>
+
+</html>
